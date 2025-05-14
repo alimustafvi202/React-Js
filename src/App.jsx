@@ -7,6 +7,7 @@ import './index.css';
 import ReactDOM from 'react-dom';
 import { StudentProvider } from './components/StudentContext';
 import StudentManager from './components/Allinone';
+import ParentComponent from './components/CallBack';
 function App() {
   return (
     <>
@@ -16,9 +17,10 @@ function App() {
       <LoginPage/> */}
 
 
-      <StudentProvider>
+      {/* <StudentProvider>
       <StudentManager />
-    </StudentProvider>
+    </StudentProvider> */}
+    <ParentComponent/>
     </>
   )
 }
